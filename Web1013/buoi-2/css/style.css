@@ -1,0 +1,36 @@
+p {
+    color: violet;
+}
+
+span {
+    color: rgba(255, 0, 0, 0.5); /*làm mờ màu đi 0.5*/
+    font-size: 20px !important;
+}
+
+.mau-tim {
+    color: violet;
+    font-size: 24px;
+}
+
+#mau-vang {
+    color: orange;
+    font-size: 30px;
+}
+
+.mau-hong {
+    color: pink;
+}
+
+.mau-hoi-tim {
+    color: rgba(0,0,0,0.5);
+}
+
+.mau-tim {
+    color: black;
+}
+
+
+
+label {
+    color: rgb(255, 69, 0);
+}

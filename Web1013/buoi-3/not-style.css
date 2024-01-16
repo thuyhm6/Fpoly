@@ -1,0 +1,21 @@
+h1, h2 { /*CSS cho cả 2 thẻ h1 và h2*/
+    color: brown;
+}
+
+.bai-tho { /*CSS cho những phần tử có class = 'bai-tho'*/
+    color: red;
+}
+
+.bai-tho>p { /*CSS cho những phần tử có thẻ p là con của class = 'bai-tho'*/
+    color: black;
+}
+
+.bai-tho p { /*CSS cho những phần tử có thẻ p nằm trong phần tử chứa class = 'bai-tho'*/
+    color: black;
+}
+
+.noi-dung.doi-mau { /*CSS cho những phần tử có đồng thời 2 class = 'noi-dung' và class='doi-mau'*/
+    color: green;
+}
+
+
