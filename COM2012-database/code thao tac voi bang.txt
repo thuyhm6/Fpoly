@@ -1,0 +1,68 @@
+#Xóa database
+drop database ql_cong_ty;
+
+#Tạo database
+create database ql_du_an character set utf8mb4 
+collate utf8mb4_general_ci;
+
+#Trỏ đến database muốn thao tác
+use ql_du_an;
+
+#Tạo bảng
+create table phong_ban (
+ma_phong_ban varchar(10) not null,
+ten_phong_ban varchar(45) not null,
+truong_phong varchar(10),
+ngay_nhan_chuc datetime,
+primary key (ma_phong_ban)
+);
+
+create table nhan_vien (
+ma_nhan_vien varchar(10) not null,
+ten_nhan_vien varchar(50) not null,
+gioi_tinh varchar(8),
+ngay_sinh datetime,
+dia_chi varchar(100),
+ma_phong_ban varchar(10),
+nguoi_quan_ly varchar(10),
+luong decimal(10,3)
+);
+
+create table con (
+ma_nhan_vien varchar(10) not null,
+ten varchar(50),
+gioi_tinh varchar(10),
+ngay_sinh datetime
+);
+
+create table du_an (
+ma_du_an varchar(10) not null,
+ten_du_an varchar(50),
+ma_phong_ban varchar(10),
+dia_diem varchar(100),
+primary key (ma_du_an)
+);
+
+#Xóa bảng
+drop table phong_ban;
+
+create table nhan_vien_du_an (
+id int not null auto_increment,
+ma_nhan_vien varchar(10) not null,
+ma_du_an varchar(10),
+gio_lam_viec int,
+primary key (id)
+);
+
+#Thêm khóa chính
+alter table nhan_vien add primary key(ma_nhan_vien);
+
+#Thêm cột - thuộc tính với khóa chính
+alter table con add column id int not null auto_increment,
+add primary key(id);
+
+alter table phong_ban add column ngay_hieu_luc datetime;
+
+#sửa cột
+alter table phong_ban change column ngay_hieu_luc ngay_co_hieu_luc datetime;
+
