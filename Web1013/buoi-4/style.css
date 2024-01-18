@@ -1,0 +1,46 @@
+.bai-tho {
+    font-size: 16px; /*Kích thước chữ*/
+    font-family: Arial, Helvetica, sans-serif; /*Loại font chữ*/
+    font-style: italic; /*Kiểu chữ*/
+    font-weight: 400; /*Độ béo của chữ*/
+    color: #412dc7; /*màu chữ*/
+    text-transform: uppercase; /*Chuyển sang chữ hoa*/
+    /* text-decoration: overline; */
+    line-height: 26px;
+    letter-spacing: 2px; /*Khoảng cách giữa các từ*/
+    word-spacing: 9px; /*Khoảng cash giữa các chữ cái*/
+    margin-left: 16px; /*Căn lề*/
+    margin-top: 32px;
+    /* cursor: pointer; */
+}
+
+a {
+    text-decoration: none;
+    /* text-shadow: x y blur color; */
+    /* text-shadow: 2px 3px 5px red; */
+}
+
+a:hover { /*Khi trỏ chuột vào*/
+    cursor: default; /*Hiệu ứng chuột*/
+}
+
+a:visited { /*Khi click vào*/
+    color: red;
+}
+
+a:active {
+    color: violet;
+}
+
+.doi-mau {
+    color: green;
+    font-weight: bold;
+}
+
+.bai-tho-2 {
+    color: violet;
+}
+
+.bai-tho-2 .doi-mau {
+    color: violet;
+}
