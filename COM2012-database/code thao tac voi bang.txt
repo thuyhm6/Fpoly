@@ -1,9 +1,9 @@
-#Xóa database
-drop database ql_cong_ty;
-
 #Tạo database
 create database ql_du_an character set utf8mb4 
 collate utf8mb4_general_ci;
+
+#Xóa database
+drop database ql_cong_ty;
 
 #Trỏ đến database muốn thao tác
 use ql_du_an;
@@ -43,9 +43,6 @@ dia_diem varchar(100),
 primary key (ma_du_an)
 );
 
-#Xóa bảng
-drop table phong_ban;
-
 create table nhan_vien_du_an (
 id int not null auto_increment,
 ma_nhan_vien varchar(10) not null,
@@ -54,15 +51,53 @@ gio_lam_viec int,
 primary key (id)
 );
 
+#Xóa bảng
+drop table du_an;
+
 #Thêm khóa chính
 alter table nhan_vien add primary key(ma_nhan_vien);
+
+#Thêm cột
+alter table phong_ban add column ngay_hieu_luc datetime;
 
 #Thêm cột - thuộc tính với khóa chính
 alter table con add column id int not null auto_increment,
 add primary key(id);
 
-alter table phong_ban add column ngay_hieu_luc datetime;
-
 #sửa cột
 alter table phong_ban change column ngay_hieu_luc ngay_co_hieu_luc datetime;
 
+#xóa cột
+alter table phong_ban drop column ngay_co_hieu_luc;
+
+#Thêm khóa chính
+alter table con add column id int not null auto_increment, 
+add primary key (id);
+
+#Xóa khóa chính (Lưu ý khi bỏ khóa chính thì phải bỏ giá trị auto_increment nếu có trước)
+alter table con drop primary key;
+
+#Xem thông tin bảng
+show create table nhan_vien;
+
+#Tạo ràng buộc khóa ngoại
+alter table nhan_vien add constraint fk_ma_phong_ban 
+foreign key (ma_phong_ban) references phong_ban(ma_phong_ban);
+
+alter table du_an add constraint fk_ma_phong_ban_du_an 
+foreign key (ma_phong_ban) references phong_ban(ma_phong_ban);
+
+alter table con add constraint fk_ma_con_nhan_vien 
+foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien);
+
+alter table nhan_vien_du_an add constraint fk_ma_nhan_vien_du_an 
+foreign key (ma_nhan_vien) references nhan_vien(ma_nhan_vien);
+
+alter table nhan_vien_du_an add constraint fk_ma_du_an_du_an 
+foreign key (ma_du_an) references du_an(ma_du_an);
+
+#Thêm ràng buộc kiểm tra
+alter table nhan_vien add constraint check_luong check(luong > 0);
+
+#Thêm ràng buộc dữ liệu không được trùng nhau
+alter table nhan_vien add constraint un_ten_nhan_vien unique(ten_nhan_vien);
