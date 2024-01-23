@@ -1,0 +1,60 @@
+
+.main {
+    width: 1200px;
+    height: 1800px;
+    max-width: 100%; /*lấy kích thước bằng 100% khi width nhỏ hơn 1200px*/
+    margin: 0 auto; /*Căn giữa theo chiều ngang vào trong phần tử cha*/
+}
+
+header {
+    width: 100%;
+    height: 200px;
+
+    background-image: url('https://insacmau.com/wp-content/uploads/2023/02/logo-fpt-polytechnic.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative; /* Vị trí tương đối */
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: aqua;
+    position: sticky; /*Vị trí bám dính*/
+    top:  0px; /*Di chuột đến vị trí top = 0px thì dính lại*/
+
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute; /*Vị trí tuyệt đối*/
+    top: 50%; /*Di chuyển cách vị trí top 50%*/
+    left: 50%; /*Di chuyển cách vị trí left 50%*/
+    transform: translate(-50%, -50%); /*Di chuyển cách vị trí của chính nó 50% - mục đích để đưa vào giữa*/
+}
+
+
+.article {
+    height: 300px;
+    width: 70%; /*Chiếm 70% kích thước của thẻ cha chứa nó*/
+    background-color: violet;
+    float: left; /*Thả nổi về bên trái*/
+}
+
+.aside {
+    height: 300px;
+    width: 30%;
+    background-color: green;
+    float: right; /*Thả nổi về bên phải*/
+}
+
+footer {
+    height: 100px;
+    background-color: orange;
+    clear: both; /*Bỏ thả nổi*/
+}
+
+
