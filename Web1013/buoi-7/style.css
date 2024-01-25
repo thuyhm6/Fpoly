@@ -1,0 +1,74 @@
+* { /*Reset CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    /* overflow: hidden; Phần tử bên trong vượt quá thì sẽ bị ẩn */
+    background-image: url('https://caodang.fpt.edu.vn/wp-content/uploads/1900x750-32.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffaa00ff;
+    color: white;
+    padding: 8px;
+    border-bottom-left-radius: 20px;
+}
+
+.login-item {
+    padding-left: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    font-size: 14px;
+}
+
+.logo-name {}
+
+.slogan {}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(255, 165, 0);
+}
+
+.menu {}
+
+.menu-list {
+
+}
+
+.menu-item {
+    display: inline-block; /*Cho lên cùng dòng*/
+    line-height: 40px;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 6px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
