@@ -1,0 +1,30 @@
+use ql_du_an;
+
+#Lấy tất cả dữ liệu từ các cột trong bảng phong_ban.
+select * from phong_ban; 
+
+#Lấy dữ liệu từ các cột theo ý muốn
+select ma_phong_ban, ten_phong_ban from phong_ban;
+
+#ghép dữ liệu của 2 cột - dùng hàm concat
+ select concat(ma_phong_ban, '-', ten_phong_ban) as ma_va_ten from phong_ban;
+ 
+ 
+#Lấy dữ liệu từ 1 cột và loại bỏ dữ liệu trùng
+select distinct truong_phong from phong_ban;
+ 
+ #Cập nhật dữ liệu của cột trong 1 bảng
+ update phong_ban set dia_diem = 'Ha Noi' where ma_phong_ban = 'PB001';
+
+# lấy 5 dữ liệu đầu tiên trong bảng phong_ban
+
+#Tìm ra những phòng ban có địa điểm là Thanh Hoa
+select * from phong_ban where dia_diem = 'Thanh Hoa';
+
+#Tìm ra những phòng ban có địa điểm chứa chữ Ha
+select * from phong_ban where dia_diem like '%Ha%';
+
+#tìm những phòng ban có ngày nhận chức <= 2023-01-03
+select * from phong_ban where ngay_nhan_chuc <= '2023-01-03';
+
+
