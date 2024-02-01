@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1000px;
+    max-width: 80%;
+    margin: 100px auto;
+}
+.form-input {
+    /* text-align: center; */
+    background-color: rgba(204, 204, 204, 0.5);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.form-control {
+    border: 1px solid blue;
+    border-radius: 3px;
+    outline: none;
+    padding: 6px;
+    font-size: 20px;
+    /* box-shadow: 2px 2px 2px blue; */
+}
+
+.form-control:focus {
+    /* border: 1px solid green; */
+    box-shadow: 0 0 2px blue;
+}
+
+.form-group>label {
+    display: block;
+    margin: 10px 0 6px 0;
+}
+
+.form-check-group>input{
+    margin-right: 10px;
+}
+
+p {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.form-select {
+    width: 150px;
+    padding: 6px;
+    border: 1px solid blue;
+    border-radius: 2px;
+}
+
+textarea {
+    border: 1px solid blue;
+    border-radius: 2px;
+    outline: none;
+    padding: 6px;
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid blue;
+    border-radius: 2px;
+    padding: 6px;
+}
+
+legend {
+    text-align: center;
+}
+
+input[name='ngay-thang'] {
+    width: 200px;
+    padding: 6px;
+}
