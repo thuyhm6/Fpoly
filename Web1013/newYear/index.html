@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>New Year</title>
+</head>
+<body> 
+    
+    <div class="container">
+        <div class="background">
+            <!-- <img src="/background.png" class="background-img" alt=""> -->
+        </div>
+        <div class="input-form" id="form-input" >
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Mời bạn nhập mã sinh viên">
+                <input type="email" class="form-control" placeholder="Mời bạn nhập email">
+            </div>
+            <button class="confirm-btn" id="confirm-btn">Xác nhận</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="main-content">
+                <i class="fa-solid fa-xmark" id="bam"></i>
+                <div class="clear"></div>
+                <img src="/new-year.jpg" alt="" class="content-img">
+                <p class="greeting">Chúc mừng năm mới</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var confirmBtn = document.getElementById('confirm-btn');
+        var modal = document.getElementById('modal');
+        var formInput = document.getElementById('form-input');
+        
+        confirmBtn.onclick = function () {
+            modal.style.display = 'block';
+            formInput.style.display = 'none';
+        }
+        var bam = document.getElementById('bam');     
+        bam.onclick = function () {
+            modal.style.display = 'none';
+            formInput.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
