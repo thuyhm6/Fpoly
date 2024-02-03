@@ -1,0 +1,39 @@
+
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid blue;
+    height: 50px;
+    width: 100px;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+tr {
+    background: #ccc;
+}
+
+thead>tr {
+    background: #c6eb3e !important;
+}
+
+tfoot>tr {
+    background: #f432c3 !important;
+}
+
+/* tr:last-child { 
+    background: violet !important;
+} */
+
+tr:nth-child(2n+1) { /*Lẻ*/
+    background: aqua;
+}
+
+tr:nth-child(2n) { /*Chẵn*/
+    background: #efa1a1;
+}
+
+tr:hover {
+    opacity: 0.8;
+}
