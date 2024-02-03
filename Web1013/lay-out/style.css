@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+}
+.row {
+    /* margin-left: -8px;
+    margin-right: -8px; */
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.col-3 {
+    width: calc(100% / 3);
+    float: left;
+    
+}
+
+.col-4 {
+    width: calc(100% / 4);
+    float: left;
+    
+}
+
+.news-img {
+    width: 100%;
+    display: block;
+    padding: 0 8px;
+}
+
+.clear {
+    clear: both;
+}
+.box {
+    width: 100%;
+    height: 20px;
+    background-color: red;
+}
