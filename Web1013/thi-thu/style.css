@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f4763c;
+    height: 100px;
+    position: relative;
+}
+.header-logo {
+    position: absolute;
+    padding-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo-img {}
+
+.search {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* padding-right: 10px; */
+}
+
+.search-form {}
+
+.search-form>input {
+    padding: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.search-form>button {
+    padding: 4px;
+    border: 1px solid #ccc;
+    text-transform: uppercase;
+    background-color: #1d0448;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    background-color: orangered;
+    height: 40px;
+}
+
+.menu-list {
+    text-align: center;
+    line-height: 40px;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 0 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {}
+
+.banner-img {
+    width: 100%;
+}
+
+h3 {
+    text-transform: uppercase;
+    padding: 10px 4px;
+    font-size: 28px;
+}
+
+.main-news {
+    height: 500px;
+}
+
+.news-left {
+    width: 30%;
+    height: 100%;
+    float: left;
+    border: 1px solid #f4763c;
+}
+
+.main-content-left {
+    
+    padding: 10px;
+}
+
+.main-content-left .content-img {
+    width: 100%;
+}
+
+
+.content-name {
+    color: #f4763c;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.conten-detail {}
+
+.news-right {
+    width: 70%;
+    height: 100%;
+    padding-left: 20px;
+    float: left;
+}
+
+.main-content-right {  
+    height: 50%;
+}
+
+.main-content-right:last-child {  
+    padding-top: 20px;
+}
+
+.content-right {
+    border: 1px solid #f4763c;
+    padding: 20px;
+    height: 100%;
+}
+
+.news-right .content-img {
+    float: left;
+    padding-right: 20px;
+    height: 100%;
+}
+
+
+footer {
+    height: 40px ;
+    background-color: #f4763c;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-name {
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
