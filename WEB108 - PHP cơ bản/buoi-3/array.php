@@ -24,9 +24,9 @@
 
     //Xóa phần tử của mảng
     //Xóa ở đầu mảng
-    //array_shift($array2);
+    array_shift($array2);
     //Xóa ở cuối mảng
-    //array_pop($array2);
+    array_pop($array2);
     //Xóa ở vị trí chỉ định
     array_splice($array2, 1, 21645);
     print_r($array2);
