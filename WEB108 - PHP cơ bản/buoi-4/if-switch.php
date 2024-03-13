@@ -2,13 +2,13 @@
     $a = 1;
 
     //Rẽ nhánh với if else
-    /*  if ( $a > 7) {
+    if ( $a > 7) {
         echo '$a lớn hơn 7';
      } else if ( $a > 6) {
         echo '$a lớn hơn 6';
      } else {
         echo "Khác";
-     } */
+     }
 
      if ( $a > 7):
         echo '$a lớn hơn 7';
@@ -21,7 +21,7 @@
 
      //Rẽ nhánh với switch case
 
-     /* switch ($a) {
+     switch ($a) {
         case 1:
             echo "a bằng 1";
             break;
@@ -30,7 +30,7 @@
             break;
         default:
             echo "a không bằng 1 hoặc 2";
-     } */
+     }
 
      switch ($a):
         case '1':
@@ -43,7 +43,7 @@
             echo "a không bằng 1 hoặc 2";
         endswitch;
 
-    //$b = ($a > 3) ? 4 : 2;
+    $b = ($a > 3) ? 4 : 2; //Toán tử 3 ngôi
     if ($a > 3) {
         $b = 4;
     } else {
