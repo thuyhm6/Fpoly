@@ -24,7 +24,7 @@
     $sql = "select * from san_pham;";
     //Dùng hàm mysqli_query để lấy thông tin câu lệnh SQL khi thực hiện
     $result = mysqli_query($conn, $sql);
-    //Dùng hàm mysqli_query để lấy dữ liệu khi chạy câu lệnh $sql
+    //Dùng hàm mysqli_fetch_all để lấy dữ liệu khi chạy câu lệnh $sql
     $sanPhams = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
