@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    height: 50px;
+    background-color: pink;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+footer>p {
+    background-color: violet;
+    height: 100%;
+}
+
+table {
+    /* border: 1px solid green; */
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid green;
+}
