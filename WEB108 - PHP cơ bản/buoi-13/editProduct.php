@@ -35,6 +35,7 @@
             if ($soLuong == '' || $soLuong == null) {
                 $errorMess[] = 'Số lượng sản phẩm không được trống';
             }
+            return $errorMess;
         }
     ?>
     <?php 
@@ -55,7 +56,7 @@
             //Check invalid dữ liệu rỗng hay không
             $errorMes = invalidProduct($tenSP, $soLuong, $gia);
 
-            if ($errorMes == '' && $errorMes == null) {
+            if ($errorMes == '' || $errorMes == null) {
                 $sql = "UPDATE SAN_PHAM SET TEN_SAN_PHAM = ?, SO_LUONG = ?, GIA = ? WHERE MA_SAN_PHAM = ?";
             $stmt = mysqli_prepare($conn, $sql);
             if ($stmt == false) {
