@@ -14,6 +14,7 @@
         }
         if (isset($_POST['logout'])) {
             setcookie("userName","", time() -10);
+            session_destroy();
             header("location: login.php");
         }
 
@@ -30,7 +31,7 @@
         //Tìm kiếm sản phẩm
         $searchSP = "";
         if (isset($_POST['search'])) {
-            //Thêm % là để phục vụ cho từ khóa like(tìm kiếm tương đối)
+            //Thêm % là để phục vụ cho từ khóa like(tìm kiếm tương đối), tìm kiếm tuyệt đối thì dùng dấu =
             $searchSP = "%".$_POST['searchSP']."%";
             $sql_search = "SELECT * FROM SAN_PHAM WHERE MA_SAN_PHAM like ? OR TEN_SAN_PHAM like ?";
             $stmt = mysqli_prepare($conn, $sql_search);
