@@ -11,15 +11,23 @@
         include "database.php";
         $loginFail = "";
         if (isset($_POST['login'])) {
+            //Đây là cách đối chiếu user name và pass nhập vào với database
             $userName = $_POST['userName'];
             $pass = $_POST['pass'];
             $sql = "SELECT * FROM SYS_USER WHERE USER_NAME = ? AND PASSWORD = ?";
             $stmt = mysqli_prepare($conn, $sql);
             mysqli_stmt_bind_param($stmt, 'ss', $userName, $pass);
             if (mysqli_stmt_execute($stmt)) {
-                $_SESSION['userName'] = $userName;
-                header("location: index.php");
-                //echo "<script>window.location.href='index.php';</script>";
+                mysqli_stmt_store_result($stmt);
+                if (mysqli_stmt_num_rows($stmt) == 1) {
+                    $_SESSION['userName'] = $userName;
+                    setcookie("userName",$userName, time() + 30*24*60*60);
+                    header("location: index.php");
+                    //echo "<script>window.location.href='index.php';</script>";
+                } else {
+                    $loginFail = "Đăng nhập thất bại";
+                }
+                
             } else {
                 $loginFail = "Đăng nhập thất bại";
             }
