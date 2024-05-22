@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sản phẩm</title>
+</head>
+<body>
+    <h1>Danh sách sản phẩm</h1>
+    <table>
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+        </tr>
+        <?php foreach($data as $product): ?>
+            <tr>
+                <td><?= $product['ten_san_pham'] ?></td>
+                <td><?= $product['gia'] ?></td>
+                <td><?= $product['so_luong'] ?></td>
+            </tr>
+        <?php endforeach?>
+    </table>
+</body>
+</html>
