@@ -1,0 +1,30 @@
+table {
+    border-collapse: collapse;
+}
+td,th {
+    
+    border: 1px solid red;
+}
+
+.menu {}
+
+.menu-list {
+    /* list-style-type: none; */
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 0 20px;
+    /* list-style: none; */
+}
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.form-group {
+    display: block;
+}
