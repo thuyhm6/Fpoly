@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Fpoly web</title>
+</head>
+<body>
+    <div class="grid">
+        <header class="header">
+            <div class="container row">
+                <div class="header-logo">
+                    <img class="logo-img" src="./assets/img/logo-trang.png" alt="">
+                </div>
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item"><a href="" class="menu-link">Giới thiệu chung</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Tuyển sinh</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">Chương trình đào tạo</a></li>
+                        <li class="menu-item"><a href="" class="menu-link">học bổng</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img class="banner-img" src="./assets/img/banner/1900x750-FPT-Polytechnic-Hoc-bong-phat-trien-nguon-nhan-luc.png" alt=""></div>
+                    <div class="slide"><img class="banner-img" src="./assets/img/banner/1900x750_Trac-nghiem.png" alt=""></div>
+                    <div class="slide"><img class="banner-img" src="./assets/img/banner/1900x750_1-2.png" alt=""></div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="next" onclick="changeSlide(1)"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="fpl-info-backgroud">
+                <div class="fpl-info container row">
+                    <div class="fpl-info-item col xl-3">
+                        <img src="./assets/img/icon/icon-1-110x110.png" alt="" class="item-icon">
+                        <div class="item-info-number">
+                            <p class="item-rate">97.7%</p>
+                            <p class="item-content">Sinh viên có việc làm</p>
+                        </div>
+                    </div>
+                    <div class="fpl-info-item col xl-3">
+                        <img src="./assets/img/icon/icon-2-110x110.png" alt="" class="item-icon">
+                        <div class="item-info-number">
+                            <p class="item-rate">97.7%</p>
+                            <p class="item-content">Sinh viên có việc làm</p>
+                        </div>
+                    </div>
+                    <div class="fpl-info-item col xl-3">
+                        <img src="./assets/img/icon/icon-3-110x110.png" alt="" class="item-icon">
+                        <div class="item-info-number">
+                            <p class="item-rate">97.7%</p>
+                            <p class="item-content">Sinh viên có việc làm</p>
+                        </div>
+                    </div>
+                    <div class="fpl-info-item col xl-3">
+                        <img src="./assets/img/icon/icon-4-110x110.png" alt="" class="item-icon">
+                        <div class="item-info-number">
+                            <p class="item-rate">97.7%</p>
+                            <p class="item-content">Sinh viên có việc làm</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Ngành học -->
+         <div class="major container">
+            <h3>Chuyên ngành đào tạo</h3>
+            <div class="major-list row">
+                <div class="major-item col xl-4">
+                    <a href="" class="major-item-link">
+                        <img class="major-img" src="./assets/img/major/CNDT1.png" alt="">
+                        <p class="major-link">Công nghệ thông tin</p>
+                    </a>
+                </div>
+                <div class="major-item col xl-4">
+                    <a href="" class="major-item-link">
+                        <img class="major-img" src="./assets/img/major/CNDT2.png" alt="">
+                        <div class="overlay"></div>
+                        <p class="major-link">Digital Marketing</p>
+                    </a>
+                    
+                </div>
+                <div class="major-item col xl-4">
+                    <a href="" class="major-item-link">
+                        <img class="major-img" src="./assets/img/major/Cơ_khí_2.png" alt="">
+                        <p class="major-link">Thiết kế đồ họa</p>
+                    </a>
+                </div>
+            </div>
+         </div>
+         <!-- Tin tức -->
+         <div class="container">
+            <div class="news row">
+              <div class="news-info col xl-9">
+                  <div class="news-title row">
+                      <h3 class="col xl-6">tin mới nhất</h3>
+                      <h3 class="col xl-6">gương mặt poly</h3>
+                  </div>
+                  <div class="news-detail row">
+                      <div class="news-item col xl-6">
+                          <img src="./assets/img/news/fpt-polytechnic-TPHCM-Lop-hoc-lap-trinh-3-770x500.jpg" alt="" class="news-item-img">
+                          <p class="new-item-content">FPT Polytechnic TP HCM khai giảng Dự án cộng đồng – Lớp học lập trình mùa 3</p>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="admissions col xl-3">
+                  <img class="admissions-img" src="./assets/img/admissions-390x640_1-2.png" alt="">
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
