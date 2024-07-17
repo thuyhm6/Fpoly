@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    background-color: #ddedd5ff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #868a83;
+    padding: 20px 10px;
+}
+
+.main-menu {
+    background-color: #212121ff;
+    padding: 20px 10px;
+    margin: 10px 0;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    
+}
+
+.item-link {
+    color: white;
+    font-size: 1.5rem;
+    padding-right: 16px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.banner-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.product-list {}
+
+.acount {
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title {
+    width: 100%;
+    background-color: #cccc;
+    padding: 5px 0 5px 10px;
+    font-size: 1.6rem;
+}
+
+.account-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-img {
+    width: 100%;
+    padding: 50px 80px 0 80px;
+    
+}
+
+.account-name {
+    font-size: 1.4rem;
+    padding: 5px 0;
+}
+
+.account-form {
+    
+    padding: 0 10px;
+}
+
+.form-group {
+    /* width: 100%; */
+    padding: 5px 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 1.4rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+.remember-id {
+    margin-right: 5px;
+}
+
+.btn-login {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5px;
+}
+.forgot-pass {
+    display: block;
+    font-size: 1.4rem;
+    padding: 5px 0;
+}
+
+.category {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.base-list {
+    padding-left: 10px;
+}
+
+.base-item {
+    padding: 5px 0;
+}
+
+.base-link {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.search-key {
+    margin: 0 10px;
+}
+
+.search-key-input {}
+
+.top-ten {
+    border: 1px solid #ccc;
+
+}
+
+.top-ten-list {}
+
+.top-ten-item {}
+
+.top-ten-link {}
+
+/* Login */
+
+.login-form {
+    width: 100%;
+}
+
+.login-title {
+    width: 100%;
+    background-color: #f7e4dfff;
+    padding: 20px 0 20px 10px;
+    font-size: 2rem;
+    color: #995c59ff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* .product-detail */
+.product-detail {
+    border: 1px solid #ccc;
+}
+
+.product-detail-img {
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.product-info {
+    padding: 10px;
+    font-size: 1.6rem;
+}
+
+.product-info p {
+    padding-top: 10px;
+}
+
+.product-content {
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+
+.comment {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* admin */
+
+.admin-title {
+    background-color: #ddedd5ff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* table */
+
+table {
+    margin: 10px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: #ddedd5ff;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+tbody {
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ddedd5ff;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #868a83;
+    padding: 20px 10px;
+    text-align: center;
+}
