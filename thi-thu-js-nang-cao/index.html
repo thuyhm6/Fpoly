@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <title>thi js</title>
+</head>
+<body>
+    <div class="container">
+        <form method="post" id="login-form">
+            <lable for="username" class="form-lable">Tên đăng nhập</lable>
+            <input type="text" class="form-control" id="username">
+            <label for="password" class="form-lable">Mật khẩu</label>
+            <input type="text" id="password" class="form-control">
+            <button type="submit" class="btn btn-primary mt-2">Đăng nhập</button>
+        </form>
+
+        <div id="product-secsion" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loại sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody class="product-list">
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
