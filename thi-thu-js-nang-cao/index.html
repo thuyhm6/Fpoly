@@ -16,8 +16,8 @@
             <button type="submit" class="btn btn-primary mt-2">Đăng nhập</button>
         </form>
 
-        <div id="product-secsion" style="display: none;">
-            <table>
+        <div id="product-secsion" style="display: block;">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Loại sản phẩm</th>
@@ -28,6 +28,14 @@
                 <tbody class="product-list">
                 </tbody>
             </table>
+            <form method="post" class="product-form">
+                <lable class="form-lable">Loại sản phẩm</lable>
+                <input type="hidden" id="productID" value="">
+                <input type="text" class="form-control" id="category">
+                <lable class="form-lable">Tên sản phẩm</lable>
+                <input type="text" id="product-name" class="form-control">
+                <button class="btn btn-primary mt-2" type="submit">Lưu</button>
+            </form>
         </div>
         
     </div>
